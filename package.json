@@ -1,0 +1,34 @@
+{
+  "name": "reveal-file",
+  "version": "0.1.0",
+  "description": "Right-click a produced file in DeepSeek Harness Web chat to open its location in the OS file manager (Windows / macOS / Linux)",
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./client": "./lib/client.js",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "lib"
+  ],
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "reveal",
+    "file-manager",
+    "context-menu",
+    "web"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "@deepseek-ai/cordis": "^4.0.1"
+  },
+  "dsh": {
+    "client": {
+      "platform": "web",
+      "immediately": true
+    }
+  }
+}
